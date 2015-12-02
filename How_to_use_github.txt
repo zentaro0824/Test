@@ -1,0 +1,38 @@
+how to use github 
+  
+ターミナルを起動。
+
+cd ~/DeskTop
+
+じぶんのgithubのレポジトリのリンクをコピーしてくる
+例：https://github.com/zentaro0824/FirstCommit.git
+こんなかんじのやつ
+
+(確認：pwd)
+/Users/zen/Desktop
+となっていることを確認する
+
+git clone <コピーしたリンク>
+ 例：git clone https://github.com/zentaro0824/FirstCommit.git
+とうつとデスクトップに新しいファイルができる（これはレポジトリと同じ名前のファイル）
+
+このファイルのなかにアップロードしたいファイルを移動させる（コピーする）
+
+cd <cloneしたファイル>
+例：cd FirstCommit
+
+git add *
+… アスタリスク:全文のファイルという意味
+
+とうったあとに、
+
+git commit -m ‘適当なコメント’
+
+“” ではなく, ‘’である点に注意
+
+【ここまでやると準備完了した状態】
+
+git push -u origin master
+
+で、反映される（はず！）
+
